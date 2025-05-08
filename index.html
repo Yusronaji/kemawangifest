@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kemawangi Fest</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #5D0703; /* Merah gelap */
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #8B0000, #5D0703);
+      padding: 50px 20px 20px;
+      color: #FFD700; /* Emas */
+    }
+
+    header h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 18px;
+      color: #ffcc70;
+    }
+
+    .button-container {
+      padding: 40px 20px;
+      background-color: #7B1E1E;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    a.button {
+      background-color: #FFD700;
+      color: #5D0703;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 18px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+      display: inline-block;
+    }
+
+    a.button:hover {
+      transform: scale(1.05);
+      background-color: #ffdd33;
+    }
+
+    footer {
+      background-color: #3B0000;
+      padding: 20px;
+      font-size: 14px;
+      color: #FFD700;
+    }
+
+    /* Media Queries untuk Responsivitas */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+
+      a.button {
+        width: 100%;
+        max-width: 300px;
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+
+      .button-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      header p {
+        font-size: 14px;
+      }
+
+      a.button {
+        font-size: 14px;
+        padding: 10px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Festival Kemawangi</h1>
+    <p>Murup Sembyar Lestarine Budoyo Blambangan</p>
+  </header>
+
+  <div class="button-container">
+    <a href="https://tinyurl.com/LinkPendaftaranLombaTari" class="button" target="_blank">Link Pendaftaran Lomba Tari</a>
+    <a href="https://tinyurl.com/GuideBookLombaTariKemawangi" class="button" target="_blank">Guidebook Lomba Tari Kemawangi</a>
+  </div>
+
+  <footer>
+    ©2025 Kemawangi Fest
+  </footer>
+</body>
+</html>
