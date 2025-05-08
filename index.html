@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kemawangi Fest</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Festival Kemawangi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    body {
+    /* Reset dasar */
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #5D0703; /* Merah gelap */
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #5D0703;
       color: #fff;
-      text-align: center;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
       background: linear-gradient(to bottom, #8B0000, #5D0703);
-      padding: 50px 20px 20px;
-      color: #FFD700; /* Emas */
+      padding: 60px 20px;
+      text-align: center;
     }
 
-    header h1 {
+    .header-text h1 {
+      font-family: 'Playfair Display', serif;
       font-size: 48px;
       font-weight: bold;
-      margin-bottom: 10px;
+      color: #FFD700;
       text-shadow: 2px 2px 4px #000;
     }
 
-    header p {
+    .header-text p {
       font-style: italic;
       font-size: 18px;
       color: #ffcc70;
@@ -34,10 +45,10 @@
 
     .button-container {
       padding: 40px 20px;
-      background-color: #7B1E1E;
+      background-color: #5D0703;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       gap: 20px;
     }
 
@@ -49,9 +60,12 @@
       border-radius: 10px;
       font-weight: bold;
       font-size: 18px;
+      display: flex;
+      justify-content: center; /* Menjaga teks tetap terpusat secara horizontal */
+      align-items: center; /* Menjaga teks tetap terpusat secara vertikal */
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
       transition: transform 0.2s ease;
-      display: inline-block;
+      text-align: center; /* Pastikan teks di dalam tombol juga terpusat */
     }
 
     a.button:hover {
@@ -60,19 +74,21 @@
     }
 
     footer {
-      background-color: #3B0000;
+      background-color: #5D0703; /* Transparansi footer */
       padding: 20px;
       font-size: 14px;
-      color: #FFD700;
+      color: #ffd90017;
+      text-align: center;
+      margin-top: auto;
     }
 
-    /* Media Queries untuk Responsivitas */
+    /* Responsivitas */
     @media (max-width: 768px) {
-      header h1 {
+      .header-text h1 {
         font-size: 36px;
       }
 
-      header p {
+      .header-text p {
         font-size: 16px;
       }
 
@@ -82,19 +98,14 @@
         font-size: 16px;
         padding: 12px 20px;
       }
-
-      .button-container {
-        flex-direction: column;
-        align-items: center;
-      }
     }
 
     @media (max-width: 480px) {
-      header h1 {
+      .header-text h1 {
         font-size: 28px;
       }
 
-      header p {
+      .header-text p {
         font-size: 14px;
       }
 
@@ -107,17 +118,21 @@
 </head>
 <body>
   <header>
-    <h1>Festival Kemawangi</h1>
-    <p>Murup Sembyar Lestarine Budoyo Blambangan</p>
+    <div class="header-text">
+      <h1>Festival Kemawangi</h1>
+      <p>Murup Sembyar Lestarine Budoyo Blambangan</p>
+    </div>
   </header>
 
-  <div class="button-container">
-    <a href="https://tinyurl.com/LinkPendaftaranLombaTari" class="button" target="_blank">Link Pendaftaran Lomba Tari</a>
-    <a href="https://tinyurl.com/GuideBookLombaTariKemawangi" class="button" target="_blank">Guidebook Lomba Tari Kemawangi</a>
-  </div>
+  <main>
+    <div class="button-container">
+      <a href="https://tinyurl.com/LinkPendaftaranLombaTari" class="button" target="_blank">Link Pendaftaran Lomba Tari</a>
+      <a href="https://tinyurl.com/GuideBookLombaTariKemawangi" class="button" target="_blank">Guidebook Lomba Tari Kemawangi</a>
+    </div>
+  </main>
 
   <footer>
-    ©2025 Kemawangi Fest
+    &copy; 2025Yusronajiweb
   </footer>
 </body>
 </html>
